@@ -24,6 +24,7 @@ p {
 
 body {
   margin: 100px 200px 200px 100px;
-  background: url("/background.png");
+  background: url("/background.png") #24e8f4;
   background-repeat: repeat-x;
+  background-position-y: bottom;
 }
