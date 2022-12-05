@@ -1,3 +1,13 @@
+@font-face {
+  font-family: karmatic-arcade;
+  src: url(lefredy7476.github.io/ka1.ttf);
+}
+
 * {
   font-family : arial, sans-serif;
+}
+
+h1 {
+  font-family : karmatic-arcade;
+  font-weight: normal;
 }
