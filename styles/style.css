@@ -4,8 +4,8 @@
 }
 
 @font-face {
-  font-family: origami-mommy;
-  src: url("/origap__.ttf");
+  font-family: kenney-mini;
+  src: url("/Kenney Mini.ttf");
 }
 
 
@@ -19,5 +19,5 @@ h1 {
 }
 
 p {
-  font-family : origami-mommy, arial;
+  font-family : kenney-mini, arial;
 }
