@@ -1,7 +1,13 @@
 @font-face {
   font-family: karmatic-arcade;
-  src: url(lefredy7476.github.io/ka1.ttf);
+  src: url("/ka1.ttf");
 }
+
+@font-face {
+  font-family: origami-mommy;
+  src: url("/origap__.ttf");
+}
+
 
 * {
   font-family : arial, sans-serif;
@@ -10,4 +16,8 @@
 h1 {
   font-family : karmatic-arcade;
   font-weight: normal;
+}
+
+p {
+  font-family : origami-mommy;
 }
