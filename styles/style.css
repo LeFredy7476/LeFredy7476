@@ -1,30 +1,52 @@
 @font-face {
-  font-family: karmatic-arcade;
-  src: url("/fredypix.ttf");
+  font-family: fredypix;
+  src: url("/fredypix.ttf"), url("../fredypix.ttf");
+}
+
+.outline-black {
+	text-shadow: 
+    -0.08333em -0.08333em black,
+		-0.08333em        0em black,
+		-0.08333em  0.08333em black,
+		       0em -0.08333em black,
+		       0em        0em black,
+		       0em  0.08333em black,
+		       0em  0.16666em black,
+		 0.08333em -0.08333em black,
+		 0.08333em        0em black,
+		 0.08333em  0.08333em black,
+		 0.08333em  0.16666em black,
+		 0.16666em        0em black,
+		 0.16666em  0.08333em black,
+		 0.16666em  0.16666em black;
 }
 
 @font-face {
   font-family: kenney-mini;
-  src: url("/Kenney Mini.ttf");
+  src: url("/Kenney Mini.ttf"), url("../Kenney Mini.ttf");
 }
 
 
 * {
   font-family : arial, sans-serif;
+  letter-spacing: calc(1em / 12 * 0.012);
 }
 
 h1 {
-  font-family : karmatic-arcade, arial;
+  font-family : fredypix, arial;
   font-weight: normal;
+  font-size: 36px;
+  color: white;
 }
 
 p {
-  font-family : kenney-mini, arial;
+  font-family : fredypix, arial;
+  font-size: 12px;
 }
 
 body {
-  margin: 100px 200px 200px 100px;
-  background: url("/background.png") #24e8f4;
+  margin: 200px;
+  background: url("/background.png"), url("../background.png") #24e8f4;
   background-repeat: repeat-x;
   background-position-y: bottom;
 }
