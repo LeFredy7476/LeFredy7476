@@ -4,6 +4,7 @@
 }
 
 .outline-black {
+  color: white;
 	filter: 
     drop-shadow(0.0em -0.08333em 0px #000) 
     drop-shadow(0.0em 0.08333em 0px #000) 
@@ -27,7 +28,6 @@ h1 {
   font-family : fredypix, arial;
   font-weight: normal;
   font-size: 36px;
-  color: white;
 }
 
 p {
