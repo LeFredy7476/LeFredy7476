@@ -4,21 +4,12 @@
 }
 
 .outline-black {
-	text-shadow: 
-    -0.08333em -0.08333em black,
-		-0.08333em        0em black,
-		-0.08333em  0.08333em black,
-		       0em -0.08333em black,
-		       0em        0em black,
-		       0em  0.08333em black,
-		       0em  0.16666em black,
-		 0.08333em -0.08333em black,
-		 0.08333em        0em black,
-		 0.08333em  0.08333em black,
-		 0.08333em  0.16666em black,
-		 0.16666em        0em black,
-		 0.16666em  0.08333em black,
-		 0.16666em  0.16666em black;
+	filter: 
+    drop-shadow(0.0em -0.08333em 0px #000) 
+    drop-shadow(0.0em 0.08333em 0px #000) 
+    drop-shadow(-0.08333em 0.0em 0px #000)
+    drop-shadow(0.08333em 0.0em 0px #000)
+    drop-shadow(0.08333em 0.08333em 0px #000);
 }
 
 @font-face {
