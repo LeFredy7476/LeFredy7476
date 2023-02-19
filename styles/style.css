@@ -1,6 +1,6 @@
 @font-face {
   font-family: fredypix;
-  src: url("/fredypix.ttf"), url("../fredypix.ttf");
+  src: url("/fredypix_Bold.ttf"), url("../fredypix_Bold.ttf");
 }
 
 .outline-black {
