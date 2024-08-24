@@ -1,0 +1,170 @@
+
+:root {
+    --Black: #000000;
+    --Amber: #fec10e;
+    --UTOrange: #fb8501;
+    --YellowGreen: #8cc246;
+    --Avocado: #558c2f;
+    --TyrianPurple: #721448;
+    --white: #ffffff;
+    font-size: 16px;
+    font-family: Montserrat;
+    font-weight: 400;
+}
+
+body {
+    margin: 0px;
+    padding: 100px;
+    background: var(--Amber);
+
+}
+
+/* style embedable */
+
+#word-builder {
+    background-color: var(--TyrianPurple);
+    padding: 1rem;
+    border-radius: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    row-gap: 1rem;
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+#word-builder-display {
+    padding: 1rem;
+    padding-bottom: calc(1rem + 18px);
+    box-sizing: content-box;
+    border-radius: 1rem 1rem 0rem 0rem;
+    background-color: var(--white);
+    height: 400px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+#word-builder-image-list {
+    margin-left: 1rem;
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    justify-content: flex-start;
+}
+
+#word-builder-copyright {
+    writing-mode: vertical-lr;
+    text-orientation: sideways;
+    transform: rotate(180deg);
+    color: #00000088;
+    font-weight: 500;
+}
+
+#word-builder-canvas {
+    display: none;
+}
+
+#word-builder-inputs {
+    border-radius: 1rem;
+    background-color: var(--UTOrange);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+#word-builder-inputs-text::placeholder {
+    color: #00000088;
+    font-style: italic;
+    font-weight: 400;
+}
+
+#word-builder-inputs-text {
+    padding: 1rem 2rem;
+    outline: none;
+    border: none;
+    font-size: 2rem;
+    border-radius: 0rem;
+    font-family: Montserrat;
+    background: var(--Amber);
+    font-weight: 600;
+}
+
+#word-builder-settings {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    padding: 1rem;
+    padding-left: 2rem;
+    gap: 1rem;
+    align-items: end;
+}
+
+
+#word-builder-tools {
+    padding: 1rem;
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+}
+
+#word-builder-tools div {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+#word-builder-settings label {
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#word-builder-settings input, #word-builder-settings select {
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    font-size: 1rem;
+    font-family: Montserrat;
+    border: none;
+    outline: none;
+}
+
+#word-builder-settings input[type=checkbox] {
+    transform: scale(2);
+}
+
+#word-builder-export {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-grow: 1;
+    gap: 1rem;
+}
+
+.nodisplay {
+    display: none !important;
+}
+
+#word-builder-export button {
+    padding: .5rem 1rem;
+    background-color: var(--Amber);
+    border: none;
+    border-radius: 0rem;
+    transition: 0.4s ease;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+#word-builder-export button:hover {
+    transition: 0.1s ease;
+    background-color: var(--YellowGreen);
+}
+
+#word-builder-export button:active {
+    transition: 0s ease;
+    background-color: var(--Avocado);
+}
